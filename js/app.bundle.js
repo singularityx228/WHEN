@@ -1,6 +1,6 @@
 (function(){
 "use strict";
-﻿/**
+/**
  * MEB Eğitim-Öğretim Takvimi Merkezi Veri Modülü
  * Türkiye Milli Eğitim Bakanlığı takvim yapısına uygun olarak düzenlenmiştir.
  * Yeni eğitim yılları bu nesneye kolayca eklenebilir veya tarihler güncellenebilir.
@@ -166,72 +166,84 @@ const SCHOOL_CALENDARS = {
             {
                 id: "school-start-26",
                 key: "schoolStart",
-                title: "Okulların Açılışı (1. Dönem)",
+                title: "Okulların Açılışı (1. Dönem Başlangıcı)",
                 shortTitle: "Okul Açılışı",
                 date: "2026-09-14T08:30:00+03:00",
                 endDate: null,
                 icon: "🎒",
                 type: "opening",
-                description: "2026-2027 Eğitim Öğretim Yılı 1. Dönemi ilk ders zili çalıyor."
+                description: "2026-2027 Eğitim Öğretim Yılı 1. Dönemi ilk ders zili çalıyor (14 Eylül 2026 Pazartesi)."
             },
             {
                 id: "break-1-26",
                 key: "firstBreak",
                 title: "1. Dönem Ara Tatili",
                 shortTitle: "1. Ara Tatil",
-                date: "2026-11-09T00:00:00+03:00",
-                endDate: "2026-11-13T23:59:59+03:00",
-                resumeDate: "2026-11-16T08:30:00+03:00",
+                date: "2026-11-16T00:00:00+03:00",
+                endDate: "2026-11-20T23:59:59+03:00",
+                resumeDate: "2026-11-23T08:30:00+03:00",
                 icon: "🍂",
                 type: "break",
-                description: "Kasım ayı 1. ara tatili."
+                description: "1. Dönem ara tatili: 16 Kasım 2026 Pazartesi - 20 Kasım 2026 Cuma (Dersler 23 Kasım'da başlar)."
             },
             {
                 id: "semester-end-26",
                 key: "firstSemesterEnd",
-                title: "1. Dönem Sonu (Yarıyıl Tatili)",
-                shortTitle: "1. Dönem Karneleri",
-                date: "2027-01-15T17:00:00+03:00",
-                endDate: "2027-01-29T23:59:59+03:00",
-                resumeDate: "2027-02-01T08:30:00+03:00",
+                title: "1. Dönem Sonu (Karnelerin Verilmesi)",
+                shortTitle: "1. Dönem Sonu",
+                date: "2027-01-22T17:00:00+03:00",
+                endDate: "2027-02-05T23:59:59+03:00",
+                resumeDate: "2027-02-08T08:30:00+03:00",
                 icon: "📜",
                 type: "semester_break",
-                description: "15 günlük sömestr yarıyıl tatili başlıyor."
+                description: "1. Dönemin sona ermesi: 22 Ocak 2027 Cuma karneler dağıtılıyor."
+            },
+            {
+                id: "semester-break-27",
+                key: "semesterBreak",
+                title: "Yarıyıl Tatili (Sömestr - 15 Tatil)",
+                shortTitle: "Yarıyıl Tatili",
+                date: "2027-01-25T00:00:00+03:00",
+                endDate: "2027-02-05T23:59:59+03:00",
+                resumeDate: "2027-02-08T08:30:00+03:00",
+                icon: "☕",
+                type: "semester_break",
+                description: "Yarıyıl tatili: 25 Ocak 2027 Pazartesi - 5 Şubat 2027 Cuma (2. Dönem 8 Şubat'ta başlar)."
             },
             {
                 id: "semester-start-27",
                 key: "secondSemesterStart",
                 title: "2. Dönem Başlangıcı",
                 shortTitle: "2. Dönem Başlangıcı",
-                date: "2027-02-01T08:30:00+03:00",
+                date: "2027-02-08T08:30:00+03:00",
                 endDate: null,
                 icon: "📚",
                 type: "semester_start",
-                description: "2. Dönem dersleri başlıyor."
+                description: "2. Dönem ders zili çalıyor (8 Şubat 2027 Pazartesi)."
             },
             {
                 id: "break-2-27",
                 key: "secondBreak",
                 title: "2. Dönem Ara Tatili",
                 shortTitle: "2. Ara Tatil",
-                date: "2027-04-05T00:00:00+03:00",
-                endDate: "2027-04-09T23:59:59+03:00",
-                resumeDate: "2027-04-12T08:30:00+03:00",
+                date: "2027-03-08T00:00:00+03:00",
+                endDate: "2027-03-12T23:59:59+03:00",
+                resumeDate: "2027-03-15T08:30:00+03:00",
                 icon: "🌸",
                 type: "break",
-                description: "Nisan ayı bahar ara tatili."
+                description: "2. Dönem ara tatili: 8 Mart 2027 Pazartesi - 12 Mart 2027 Cuma (Dersler 15 Mart'ta başlar)."
             },
             {
                 id: "school-end-27",
                 key: "schoolEnd",
-                title: "Okulların Kapanışı (Yaz Tatili)",
+                title: "Eğitim Öğretim Yılı Sonu (Okulların Kapanışı)",
                 shortTitle: "Yaz Tatili",
-                date: "2027-06-18T17:00:00+03:00",
+                date: "2027-06-25T17:00:00+03:00",
                 endDate: "2027-09-12T23:59:59+03:00",
                 resumeDate: "2027-09-13T08:30:00+03:00",
                 icon: "🌴",
                 type: "closing",
-                description: "2026-2027 eğitim öğretim yılı sona eriyor ve yaz tatili başlıyor!"
+                description: "2026-2027 eğitim öğretim yılı sona eriyor ve yaz tatili başlıyor (25 Haziran 2027 Cuma)."
             }
         ]
     },
