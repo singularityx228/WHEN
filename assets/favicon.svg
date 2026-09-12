@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="32" fill="url(#grad)" filter="url(#shadow)" />
+  <!-- School / Clock Icon combo -->
+  <path d="M64 28 L98 46 L30 46 Z" fill="#ffffff" />
+  <rect x="36" y="46" width="56" height="54" rx="6" fill="#ffffff" />
+  <rect x="44" y="56" width="16" height="18" rx="3" fill="#4f46e5" />
+  <rect x="68" y="56" width="16" height="18" rx="3" fill="#4f46e5" />
+  <path d="M56 100 L56 82 A8 8 0 0 1 72 82 L72 100 Z" fill="#06b6d4" />
+  <!-- Live Pulse Dot -->
+  <circle cx="98" cy="30" r="10" fill="#10b981" />
+  <circle cx="98" cy="30" r="16" fill="#10b981" opacity="0.35" />
+</svg>
